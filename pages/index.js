@@ -24,7 +24,7 @@ export default function Home({ dataTest }) {
 }
 
 export async function getServerSideProps(context) {
-  const res = await fetch(`http://localhost:3000/api/tes`)
+  const res = await fetch(`https://tesnext1.vercel.app//api/tes`)
   const data = await res.json()
   console.log("data fetch", res)
 
